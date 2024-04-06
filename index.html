@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Name Shuffler</title>
+  <style>
+    .container {
+      margin: 20px;
+    }
+
+    .winner {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .name-list {
+      margin-top: 10px;
+    }
+
+    .name-list-item {
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+    }
+
+    .name-list-item input {
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <label for="nameInput">Enter Names: </label>
+    <div class="name-list" id="nameList">
+      <div class="name-list-item">
+        <input type="text" class="nameInput" />
+        <button onclick="removeNameInput(this)">Remove</button>
+      </div>
+    </div>
+    <button onclick="addNameInput()">Add Name</button>
+    <button onclick="shuffleAndSelectWinner()">Shuffle and Select Winner</button>
+    <div class="winner" id="winnerDisplay"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
